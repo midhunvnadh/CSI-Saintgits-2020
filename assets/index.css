@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap");
+:root {
+  --prim: #583d72;
+  --sec: #9f5f80;
+  --ter: #ffba93;
+  --qua: #ff8e71;
+  --black: rgba(0, 0, 0, 0.83);
+}
+* {
+  transition: all 0.3s ease-in-out;
+  font-family: "Roboto Slab", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.nav {
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  background: var(--prim);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav .logo {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--ter);
+}
+.nav .links {
+  display: inline-block;
+}
+.nav .links li {
+  display: inline-block;
+  margin-inline-start: 1em;
+  cursor: pointer;
+}
+.nav .links li a {
+  color: var(--ter);
+  text-decoration: none;
+}
+.nav .links li a:hover {
+  color: var(--ter);
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 100vh;
+  background: var(--prim);
+}
+header .graphic img,
+section .graphic img {
+  width: 80%;
+  height: auto;
+}
+.page-holder {
+  padding: 2rem;
+  width: 30em;
+  text-align: center;
+}
+.page-holder p {
+  word-wrap: break-word;
+  color: var(--ter);
+}
+.title {
+  font-size: 3em;
+  font-weight: bolder;
+  word-wrap: none;
+  margin-block-end: 0px;
+  letter-spacing: 1px;
+  color: var(--ter);
+}
+.subtitle {
+  font-size: 2em;
+  word-wrap: break-word;
+  color: var(--ter);
+  margin-block-end: 2em;
+}
+header .page-holder .sign-up-btn .button.lg-h {
+  padding: 18px 59px;
+  border-radius: 6px;
+  border: none;
+  background: var(--sec);
+  color: var(--ter);
+  font-size: 21px;
+  box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+section {
+  min-height: 100vh;
+  background: var(--prim);
+}
+.about {
+  background: var(--sec);
+}
+.box {
+  background: var(--qua);
+  padding: 0.6em 2em;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px -3px var(--black);
+  margin: 1em;
+  width: 300px;
+  height: 150px;
+}
+.box:hover {
+  box-shadow: 0 3px 6px 0px var(--black);
+}
+.box .box-title {
+  font-size: 23px;
+  color: var(--prim);
+  font-weight: bolder;
+}
+.box .box-content {
+  font-size: 18px;
+  color: var(--prim);
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 638px) {
+  header,
+  section {
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+  header .graphic,
+  section .graphic {
+    opacity: 0.5;
+    width: 30%;
+  }
+}
+#contact form .group {
+  margin: 1em;
+  text-align: center;
+}
+#contact form .group .input,
+#contact form .group .textarea {
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  height: 30px;
+}
+#contact form .group .textarea {
+  min-height: 3em !important;
+  height: 8em !important;
+}
+#contact form .group button {
+  padding: 18px 59px;
+  border-radius: 6px;
+  border: none;
+  background: var(--sec);
+  color: var(--ter);
+  font-size: 21px;
+  box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#contact form .group * {
+  width: 300px;
+}
+#contact > * {
+  width: calc(50vw - 30px);
+}
+#products {
+  flex-wrap: wrap;
+}
+footer {
+  background: var(--prim);
+  padding: 2em;
+  text-align: center;
+  color: var(--ter);
+  font-size: 1.6em;
+}
+#contact .page-holder form {
+  flex-direction: column;
+}
+.hire-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--prim);
+  flex-direction: column;
+  padding: 2em;
+}
+.hire-us .button {
+  margin-block-start: 2em;
+  padding: 18px 59px;
+  border-radius: 6px;
+  border: none;
+  background: var(--sec);
+  color: var(--ter);
+  font-size: 21px;
+  box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
